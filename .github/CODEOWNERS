@@ -1,0 +1,16 @@
+CODEOWNERS
+
+# CODEOWNERS file
+
+# Default owner for everything in the repo
+*       @Skylowerr
+
+# Example: Assign specific ownership by directory
+/docs/  @Skylowerr
+/src/   @Skylowerr
+
+# Example: Assign ownership for specific file types
+*.md    @Skylowerr
+*.js    @Skylowerr
+
+
