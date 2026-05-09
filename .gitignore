@@ -1,0 +1,86 @@
+.gitignore
+
+# Xcode
+#
+# Build generated
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Accio dependency manager
+Dependencies/
+.accio/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Code injection
+iOSInjectionProject/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode user data
+xcuserdata/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+
+# Xcode project user settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Swift Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Archives
+*.xcarchive
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Temporary files
+*.swp
+*.lock
+*.tmp
+*.temp
+
+# Firebase
+GoogleService-Info.plist
+
+# Crashlytics
+crashlytics-build.properties
+
+# SPM local config
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.swiftpm/configuration/registries.json
+.swiftpm/configuration/mirrors.json
