@@ -7,32 +7,61 @@
 
 import SwiftUI
 
+struct StringModel {
+    let info : String?
+    
+    func removeInfo() -> StringModel{
+        StringModel(info: nil)
+    }
+}
+
+// T = Type
+struct GenericModel<T> {
+    let info : T?
+    
+    func removeInfo() -> GenericModel{
+        GenericModel(info: nil)
+    }
+}
+
+
+
 @Observable
 class GenericsViewModel{
-    var dataArray : [String] = []
-    
-    init(){
-        dataArray = ["one","two","three"]
+    var stringModel = StringModel(info: "Hello World!")
+    var genericModel = GenericModel(info: true)
+
+    func removeData(){
+        stringModel = stringModel.removeInfo()
+        genericModel = genericModel.removeInfo()
     }
+}
+
+
+struct GenericView<T: View> : View{
+    let content : T
+    let title : String
     
-    func removeDataFromDataArray(){
-        dataArray.removeAll()
+    var body : some View{
+        VStack{
+            Text(title)
+            content
+        }
     }
-    
-    
 }
 
 struct Generics: View {
     @State private var vm = GenericsViewModel()
     var body: some View {
         VStack{
-            ForEach(vm.dataArray, id: \.self){item in
-                Text(item)
-                    .onTapGesture {
-                        vm.removeDataFromDataArray()
-                    }
-            }
+            GenericView(content: Text("Hello"), title: "Maan")
+            Text(vm.stringModel.info ?? "No data")
+            Text(vm.genericModel.info?.description ?? "No data")
         }
+        .onTapGesture {
+            vm.removeData()
+        }
+
     }
 }
 
