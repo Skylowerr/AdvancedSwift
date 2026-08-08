@@ -15,18 +15,18 @@
 import SwiftUI
 
 
-@Observable
-class UnitTestingViewModel{
-    
-}
-
-
 struct UnitTesting: View {
+    @State private var vm : UnitTestingViewModel
+    
+    //TODO: Neden _vm
+    init(isPremium : Bool){
+        _vm = State(wrappedValue: UnitTestingViewModel(isPremium: isPremium))
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(vm.isPremium.description)
     }
 }
 
 #Preview {
-    UnitTesting()
+    UnitTesting(isPremium: true)
 }
