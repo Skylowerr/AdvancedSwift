@@ -42,6 +42,8 @@ import Combine
     }
 }
 
+
+
 struct BackgroundThread: View {
     @StateObject private var vm = BackgroundThreadViewModel()
     var body: some View {
