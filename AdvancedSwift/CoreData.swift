@@ -9,6 +9,8 @@ import SwiftUI
 import CoreData
 import Combine
 
+
+//save, delete, fetch işlemlerini doğrudan container üzerinden yapıyoruz
 class CoreDataViewModel : ObservableObject{
     let container : NSPersistentContainer
     @Published var savedEntities : [FruitEntity] = []
