@@ -11,7 +11,7 @@ import SwiftUI
 struct AdvancedSwiftApp: App {
     var body: some Scene {
         WindowGroup {
-            CoreDataRelationships()
+            LocalNotification()
         }
     }
 }
