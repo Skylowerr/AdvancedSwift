@@ -14,11 +14,19 @@
 			remoteGlobalIDString = 6B46BB512FAE5B8C0036D2BC;
 			remoteInfo = AdvancedSwift;
 		};
+		6BE5A45630543E4900902A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B46BB4A2FAE5B8C0036D2BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B46BB512FAE5B8C0036D2BC;
+			remoteInfo = AdvancedSwift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6B46BB522FAE5B8C0036D2BC /* AdvancedSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8A5CC82FB3362600A1E57E /* AdvancedSwift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvancedSwift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE5A45030543E4900902A4C /* AdvancedSwift_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvancedSwift_UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,6 +53,11 @@
 			path = AdvancedSwift_Tests;
 			sourceTree = "<group>";
 		};
+		6BE5A45130543E4900902A4C /* AdvancedSwift_UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AdvancedSwift_UITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BE5A44D30543E4900902A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +90,7 @@
 			children = (
 				6B46BB542FAE5B8C0036D2BC /* AdvancedSwift */,
 				6B8A5CC92FB3362600A1E57E /* AdvancedSwift_Tests */,
+				6BE5A45130543E4900902A4C /* AdvancedSwift_UITests */,
 				6B46BB532FAE5B8C0036D2BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +100,7 @@
 			children = (
 				6B46BB522FAE5B8C0036D2BC /* AdvancedSwift.app */,
 				6B8A5CC82FB3362600A1E57E /* AdvancedSwift_Tests.xctest */,
+				6BE5A45030543E4900902A4C /* AdvancedSwift_UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +153,29 @@
 			productReference = 6B8A5CC82FB3362600A1E57E /* AdvancedSwift_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6BE5A44F30543E4900902A4C /* AdvancedSwift_UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE5A45830543E4900902A4C /* Build configuration list for PBXNativeTarget "AdvancedSwift_UITests" */;
+			buildPhases = (
+				6BE5A44C30543E4900902A4C /* Sources */,
+				6BE5A44D30543E4900902A4C /* Frameworks */,
+				6BE5A44E30543E4900902A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BE5A45730543E4900902A4C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6BE5A45130543E4900902A4C /* AdvancedSwift_UITests */,
+			);
+			name = AdvancedSwift_UITests;
+			packageProductDependencies = (
+			);
+			productName = AdvancedSwift_UITests;
+			productReference = 6BE5A45030543E4900902A4C /* AdvancedSwift_UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,6 +190,10 @@
 						CreatedOnToolsVersion = 26.2;
 					};
 					6B8A5CC72FB3362600A1E57E = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 6B46BB512FAE5B8C0036D2BC;
+					};
+					6BE5A44F30543E4900902A4C = {
 						CreatedOnToolsVersion = 26.2;
 						TestTargetID = 6B46BB512FAE5B8C0036D2BC;
 					};
@@ -166,6 +215,7 @@
 			targets = (
 				6B46BB512FAE5B8C0036D2BC /* AdvancedSwift */,
 				6B8A5CC72FB3362600A1E57E /* AdvancedSwift_Tests */,
+				6BE5A44F30543E4900902A4C /* AdvancedSwift_UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +229,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6B8A5CC62FB3362600A1E57E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE5A44E30543E4900902A4C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,6 +259,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BE5A44C30543E4900902A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -209,6 +273,11 @@
 			isa = PBXTargetDependency;
 			target = 6B46BB512FAE5B8C0036D2BC /* AdvancedSwift */;
 			targetProxy = 6B8A5CCC2FB3362600A1E57E /* PBXContainerItemProxy */;
+		};
+		6BE5A45730543E4900902A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B46BB512FAE5B8C0036D2BC /* AdvancedSwift */;
+			targetProxy = 6BE5A45630543E4900902A4C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -464,6 +533,51 @@
 			};
 			name = Release;
 		};
+		6BE5A45930543E4900902A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GXK7JN5AN2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Skylowerr.AdvancedSwift-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdvancedSwift;
+			};
+			name = Debug;
+		};
+		6BE5A45A30543E4900902A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GXK7JN5AN2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Skylowerr.AdvancedSwift-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdvancedSwift;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -490,6 +604,15 @@
 			buildConfigurations = (
 				6B8A5CCF2FB3362600A1E57E /* Debug */,
 				6B8A5CD02FB3362600A1E57E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BE5A45830543E4900902A4C /* Build configuration list for PBXNativeTarget "AdvancedSwift_UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE5A45930543E4900902A4C /* Debug */,
+				6BE5A45A30543E4900902A4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

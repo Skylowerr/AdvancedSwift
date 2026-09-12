@@ -52,6 +52,17 @@
                ReferencedContainer = "container:AdvancedSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6BE5A44F30543E4900902A4C"
+               BuildableName = "AdvancedSwift_UITests.xctest"
+               BlueprintName = "AdvancedSwift_UITests"
+               ReferencedContainer = "container:AdvancedSwift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -74,6 +85,12 @@
             ReferencedContainer = "container:AdvancedSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-UITest_startSignedIn"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

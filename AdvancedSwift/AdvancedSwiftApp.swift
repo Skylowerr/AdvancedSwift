@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct AdvancedSwiftApp: App {
+    
+    let currentUserIsSignedIn : Bool
+    init() {
+        let userIsSignedIn : Bool = CommandLine.arguments.contains("-UITest_startSignedIn") ? true : false
+        //Argumentsleri çalıştır
+        self.currentUserIsSignedIn = userIsSignedIn
+        
+    }
     var body: some Scene {
         WindowGroup {
-            LocalNotification()
+            UITestingView(currentUserIsSignedIn : currentUserIsSignedIn)
         }
     }
 }
